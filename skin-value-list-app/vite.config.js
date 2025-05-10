@@ -4,9 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src')
-    }
-  }
+  resolve: { alias: { '@': path.resolve(__dirname, './src') } },
+  // ➜ ajoute cette ligne :
+  base: '/value-list-app/',   // remplace par le nom de ton dépôt
 });
